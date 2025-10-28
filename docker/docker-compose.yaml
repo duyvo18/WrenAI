@@ -47,6 +47,7 @@ services:
     
   config-init:
     image: alpine:latest
+    restart: "no"
     command: >
       sh -c "cp /repo/docker/config.yaml /shared/config.yaml"
     volumes:
